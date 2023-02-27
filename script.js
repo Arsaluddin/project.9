@@ -26,8 +26,7 @@ const getreport = (city) => {
 const showWeatherReport = (weather) => {
            console.log(weather);  
            
-           let city = document.getElementById("city");
-           city.innerText = `Temprature in ${weather.name}`;
+            document.getElementById("city").innerText = `Temprature in ${weather.name}`;
 
            let temp = document.getElementById("temp");
            temp.innerHTML = `${Math.round(weather.main.temp)-273}&deg;C`;
